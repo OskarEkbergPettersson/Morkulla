@@ -12,6 +12,7 @@ body{
 
 .container{
     margin: auto;
+    margin-bottom: 20px;
     border-radius: 8px;
     border-color: black;
     width: 76%;
@@ -65,7 +66,25 @@ body{
     margin: 2%;
     padding: 2%;
     border-radius: 10px;
-    background-color: lightskyblue;
+    /*background-color: lightskyblue;*/
+    box-shadow: 0px 0px 10px #00000030;
+}
+
+.portraitContainer{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.portraitContainer > div{
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px #00000040;
 }
 
 .gradient{
@@ -115,3 +134,4 @@ body{
 h1{
     font-size: 48px;
 }
+h2{}
