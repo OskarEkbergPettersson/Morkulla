@@ -67,7 +67,7 @@ body{
     padding: 2%;
     border-radius: 10px;
     /*background-color: lightskyblue;*/
-    box-shadow: 0px 0px 10px #00000030;
+    box-shadow: 0px 0px 10px #0000FF50;
 }
 
 .portraitContainer{
@@ -122,6 +122,7 @@ body{
     align-items: center;
     border: none;
     background-color: inherit;
+    color: blue;
     border-radius: 50%;
 }
 
