@@ -9,6 +9,11 @@ a{
     text-decoration-line: none;
 }
 
+h1{
+    font-size: 48px;
+}
+h2{}
+
 .center{
     width: 100%;
     text-align: center;
@@ -161,9 +166,12 @@ a{
     background-color: lightgray;
 }
 
-
-
-h1{
-    font-size: 48px;
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
-h2{}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
