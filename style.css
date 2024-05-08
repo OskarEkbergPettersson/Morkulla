@@ -26,9 +26,21 @@ a{
     box-shadow: 0px 0px 5px 5px #00000010;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 786px) {
     .container{
-        width: 100%;
+        width: 96%;
+        padding: 2%;
+    }
+    .slideContainer{
+        width: 80% !important;
+        height: 600px !important;
+    }
+    img{
+        display: none;
+    }
+    .portraitContainer{
+        grid-template-columns: 24% 24%;
+        grid-template-rows: auto auto;
     }
 }
 
