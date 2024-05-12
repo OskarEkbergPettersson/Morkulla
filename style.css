@@ -12,7 +12,6 @@ a{
 h1{
     font-size: 48px;
 }
-h2{}
 
 .center{
     width: 100%;
@@ -58,6 +57,17 @@ h2{}
 .projectContainer{
     display: flex; 
     flex-direction: row;
+}
+
+.projectText{
+    width: 52%;
+}
+
+.projectImage{
+    width: 48%; 
+    border-style: solid; 
+    border-radius: 5px; 
+    border-color: #00000010;
 }
 
 .sprintContainer{
@@ -169,6 +179,10 @@ h2{}
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
+.screenshotText{
+    display: none;
+}
   
 @keyframes fade {
     from {opacity: .4}
@@ -176,6 +190,15 @@ h2{}
 }
 
 @media only screen and (max-width: 786px) {
+
+    h1{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
     .container{
         width: 96%;
         padding: 2%;
@@ -184,11 +207,28 @@ h2{}
         width: 80% !important;
         height: 600px !important;
     }
-    img{
-        display: none;
-    }
     .portraitContainer{
         grid-template-columns: 48% 48%;
         grid-template-rows: auto auto auto auto;
+    }
+
+    .projectContainer{
+        flex-direction: column;
+    }
+
+    .projectText{
+        width: 100%;
+    }
+    
+    .projectImage{
+        width: 100%; 
+        border-style: solid; 
+        border-radius: 5px; 
+        border-color: #00000010;
+    }
+
+    .screenshotText{
+        display: block;
+        text-align: center;
     }
 }
