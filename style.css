@@ -11,11 +11,6 @@ a{
 
 h1{
     font-size: 48px;
-    text-align: center;
-}
-
-h2{
-    text-align: center;
 }
 
 .center{
@@ -60,17 +55,16 @@ h2{
 }
 
 .projectContainer{
-    flex-direction: column;
+    display: flex; 
+    flex-direction: row;
 }
 
 .projectText{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 100px;
+    width: 52%;
 }
 
 .projectImage{
-    width: 100%; 
+    width: 48%; 
     border-style: solid; 
     border-radius: 5px; 
     border-color: #00000010;
@@ -82,7 +76,6 @@ h2{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
     /*box-sizing: content-box;*/
 }
 
@@ -112,7 +105,6 @@ h2{
     grid-template-rows: auto auto;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
 }
 
 .portraitContainer > div{
@@ -189,11 +181,9 @@ h2{
 }
 
 .screenshotText{
-    display: block;
-    text-align: center;
-    margin-bottom: 100px;
+    display: none;
 }
-
+  
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
@@ -222,5 +212,23 @@ h2{
         grid-template-rows: auto auto auto auto;
     }
 
+    .projectContainer{
+        flex-direction: column;
+    }
+
+    .projectText{
+        width: 100%;
+    }
     
+    .projectImage{
+        width: 100%; 
+        border-style: solid; 
+        border-radius: 5px; 
+        border-color: #00000010;
+    }
+
+    .screenshotText{
+        display: block;
+        text-align: center;
+    }
 }
